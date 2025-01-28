@@ -2,7 +2,7 @@ package coffeemaker;
 
 import coffeemaker.domain.Inventory;
 import coffeemaker.domain.Recipe;
-import coffeemaker.domain.RecipeBook;
+import coffeemaker.domain.RecipeBookTest;
 import coffeemaker.exceptions.InventoryException;
 
 /**
@@ -13,7 +13,7 @@ public class CoffeeMaker {
   /**
    * Array of recipes in coffee maker
    */
-  private final RecipeBook recipeBook;
+  private final RecipeBookTest recipeBook;
 
   /**
    * Inventory of the coffee maker
@@ -24,7 +24,7 @@ public class CoffeeMaker {
    * Constructor for the coffee maker
    */
   public CoffeeMaker() {
-    recipeBook = new RecipeBook();
+    recipeBook = new RecipeBookTest();
     inventory = new Inventory();
   }
 
