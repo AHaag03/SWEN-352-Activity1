@@ -57,6 +57,9 @@ public class RecipeBook {
    * @return {@code true} if the operation succeeds; otherwise {@code false}
    */
   public boolean addRecipe(Recipe newRecipe) {
+    if (newRecipe == null) {
+      return false;
+    }
     //Assume the recipe doesn't exist in the array until find out otherwise
     boolean exists = false;
     //Check that recipe doesn't already exist in the array
@@ -89,7 +92,7 @@ public class RecipeBook {
    * @return the name of the old recipe or {@code null} if the delete operation failed
    */
   public String deleteRecipe(int recipeToDelete) {
-    if (recipeArray[recipeToDelete] != null) {
+    if (recipeToDelete >= 0 && recipeToDelete < NUM_RECIPES && recipeArray[recipeToDelete] != null) {
       String recipeName = recipeArray[recipeToDelete].getName();
       recipeArray[recipeToDelete] = new Recipe();
       return recipeName;
@@ -109,7 +112,7 @@ public class RecipeBook {
    * @return the name of the old recipe or {@code null} if the replace operation failed
    */
   public String replaceRecipe(int recipeToReplace, Recipe newRecipe) {
-    if (recipeArray[recipeToReplace] != null) {
+    if (recipeToReplace >= 0 && recipeToReplace < NUM_RECIPES && recipeArray[recipeToReplace] != null) {
       String recipeName = recipeArray[recipeToReplace].getName();
       newRecipe.setName("");
       recipeArray[recipeToReplace] = newRecipe;
