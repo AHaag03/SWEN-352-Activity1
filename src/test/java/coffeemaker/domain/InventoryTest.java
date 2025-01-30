@@ -419,4 +419,12 @@ public class InventoryTest {
 		assertEquals(inventory.getChocolate(), 10 );
 	}
 
+	@Test
+	@DisplayName("ToString. Tests the ToString Method")
+	public void ToString(){
+		assertEquals("Coffee: 15\n" + //
+						"Milk: 15\n" + //
+						"Sugar: 15\n" + //
+						"Chocolate: 15\n", inventory.toString());
+	}
 }
