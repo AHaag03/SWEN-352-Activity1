@@ -452,66 +452,6 @@ public class RecipeTest {
 	}
 
 	@Test
-	public void testRecipeEqualsDifferentPrice() {
-		Recipe recipe1 = new Recipe();
-		recipe1.setPrice("100");
-
-		Recipe recipe2 = new Recipe();
-		recipe2.setPrice("101");
-
-		// Should not be equal
-		assert !recipe1.equals(recipe2);
-	}
-
-	@Test
-	public void testRecipeEqualsDifferentAmtCoffee() {
-		Recipe recipe1 = new Recipe();
-		recipe1.setAmtCoffee("100");
-
-		Recipe recipe2 = new Recipe();
-		recipe2.setAmtCoffee("101");
-
-		// Should not be equal
-		assert !recipe1.equals(recipe2);
-	}
-
-	@Test
-	public void testRecipeEqualsDifferentAmtMilk() {
-		Recipe recipe1 = new Recipe();
-		recipe1.setAmtMilk("100");
-
-		Recipe recipe2 = new Recipe();
-		recipe2.setAmtMilk("101");
-
-		// Should not be equal
-		assert !recipe1.equals(recipe2);
-	}
-
-	@Test
-	public void testRecipeEqualsDifferentAmtSugar() {
-		Recipe recipe1 = new Recipe();
-		recipe1.setAmtSugar("100");
-
-		Recipe recipe2 = new Recipe();
-		recipe2.setAmtSugar("101");
-
-		// Should not be equal
-		assert !recipe1.equals(recipe2);
-	}
-
-	@Test
-	public void testRecipeEqualsDifferentAmtChocolate() {
-		Recipe recipe1 = new Recipe();
-		recipe1.setAmtChocolate("100");
-
-		Recipe recipe2 = new Recipe();
-		recipe2.setAmtChocolate("101");
-
-		// Should not be equal
-		assert !recipe1.equals(recipe2);
-	}
-
-	@Test
 	public void testRecipeToString() {
 		Recipe recipe1 = new Recipe();
 		recipe1.setName("Recipe 1");

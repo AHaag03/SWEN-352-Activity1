@@ -198,7 +198,6 @@ public class Recipe {
       return false;
     }
     final Recipe other = (Recipe) obj;
-
     if (name == null) {
       if (other.name != null) {
         return false;
@@ -206,27 +205,6 @@ public class Recipe {
     } else if (!name.equals(other.name)) {
       return false;
     }
-
-    if (price != other.price) {
-      return false;
-    }
-
-    if (amtCoffee != other.amtCoffee) {
-      return false;
-    }
-
-    if (amtMilk != other.amtMilk) {
-      return false;
-    }
-
-    if (amtSugar != other.amtSugar) {
-      return false;
-    }
-
-    if (amtChocolate != other.amtChocolate) {
-      return false;
-    }
-
     return true;
   }
 
